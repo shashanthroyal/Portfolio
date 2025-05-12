@@ -61,6 +61,55 @@ img{
     
 }
 
+.toggle-button{
+    display: none;
+}
+
+@media (max-width: 680px){
+
+    .toggle-button{
+        display: block;
+        font-size: 1.5em;
+            cursor: pointer;
+    }
+
+    .nav-links {
+        display: none; 
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px; 
+        left: 0;
+        width: 100%;
+        text-align: center;
+        z-index: 10; 
+    }
+
+    .nav-links.open {
+        display: flex; 
+    }
+
+    .nav-links a{
+        margin: 15px 0;
+
+    }
+
+    .home{
+        flex-direction: column;
+        text-align: center;
+        justify-self: center;
+
+        .home-right{
+            text-align: center;
+        }
+    }
+
+    .about{
+        flex-direction: column;
+    }
+    
+}
+
 
 .home{
     display: flex;
